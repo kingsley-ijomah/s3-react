@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="App">
       <h1>S3 Project</h1>
-      <p>yah! it worked!!!</p>
+      <p>Automatically pushed!!!</p>
     </div>
   );
 }
