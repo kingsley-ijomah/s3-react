@@ -1,0 +1,20 @@
+name: s3 react app
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 's3-react/**'
+defaults:
+  run:
+    working-directory: s3-react
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: npm install
+      - run: npm run build
